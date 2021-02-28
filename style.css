@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+      text-decoration: none;
+      color: #f6efee;
+  }
+
+body {
+    background-color: #f6efee;
+    font-family: 'Nunito', sans-serif;
+    color: #343434;
+    margin-top: 20px;
+    
+}
+
+
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Yeseva One', cursive; */
+
+
+header {
+    width: 100vw;
+    padding: 20px 0 20px 60px;
+    top: 0;
+    /* background-color: #343434; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    background-color: #f6efee;
+}
+
+
+header img {
+    height: auto;
+    width: 3vw;
+
+}
+
+.logo-h1  {
+    font-family: 'Yeseva One', cursive;
+    color: #c86d5c;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+
+.nav-links li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 60px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #343434;
+    
+}
+
+nav a:hover {
+    color: #c86d5c;
+    transition: color .50s ease;
+}
+
+    button {
+    background-color: #343434;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    outline: none;
+    
+
+}
+
+
+nav button a {
+    color: #f6efee;
+}
+nav button a:hover {
+    color: #f6efee;
+}
+
+
+nav button:hover {
+    background-color: #c86d5c;
+    transition: background-color .50s ease;
+    cursor: pointer;
+
+    
+}
+
+.hero-box{
+    width: 95vw;
+    margin: auto;
+    margin-top: 20px;
+    height: 50vh;
+    /* background-color: red; */
+    position: relative;
+
+    
+}
+
+.hero-img {
+    max-width: 100%;
+    position: relative;
+}
+
+.hero-img img {
+    border-radius: 5px;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: 0 75%;
+}
+
+.img-button{
+    position: absolute;
+    top: 22vh;
+    right: 44vw;
+    opacity: 0;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+  }
+
+  .hero-img:hover .overlay {
+    display: block;
+    background: #f6efee69;
+    transition: background .50s ease;
+    cursor: pointer;
+  }
+
+  .hero-img:hover .img-button {
+    opacity: 1;
+    transition: opacity .5s ease;
+   
+}
+
+.img-button:hover  button{
+    background-color: #c86d5c;
+    cursor: pointer;
+    transition: background-color .5s ease;
+
+}
+
+.feature {
+margin: auto;
+max-width: 100%;
+width: 95vw;
+padding: 10px;
+
+
+}
+
+.feature-icons {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: 20vw 20vw 20vw;
+    /* text-align: center; */
+    align-items: center;
+    text-align: center;
+    column-gap: 10vw;
+    padding: 10px 7.5vw 10px 5vw;
+    
+}
+
+
+.fas {
+color: #c86d5c ;
+font-size: 5em;
+
+}
+
+h2 {
+    font-size: 2em;
+    color: #c86d5c ;
+    padding: 15px 0;
+    font-family: 'Yeseva One', cursive;
+
+
+}
+h3 {
+    font-size: 1.1em;
+    color: #343434 ;
+    padding: 15px 0;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+
+
+}
+
+.features p {
+    font-size: 1em;
+}
+.fa-guitar {
+    padding-left: 45px;
+}
+
+.sample-vid {
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 630px;
+}
+
+.pricing {
+    display: flex;
+    margin-top: 20px;
+    max-width: 100%;
+    
+}
+
+.packages {
+    border: solid transparent 1px;
+    box-shadow: #33333323 0px 2px 3px;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.packages:hover {
+    opacity: .8;
+    cursor: pointer;
+    transition: opacity .5s ease;
+
+}
+
+h4{
+    padding: 10px;
+    color: #c86d5c;
+    font-size: 1.2em;
+}
+
+h5 {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.pricing h2 {
+    font-size: 2em;
+    color: #343434;
+    padding: 15px 0;
+    font-family: 'Yeseva One', cursive;
+}
+
+.pricing p {
+    padding: 20px;
+}
+
+.fret h2 {
+    background-color: #343434;
+    color: #f6efee;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #343434;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;  
+    margin-top: 40px;
+    padding: 10px;
+    
+}
+
+
+label {
+    color: #f6efee;
+    margin-right: 20px;
+}
+
+input {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+  
+}
+
+footer p {
+    color: #f6efee;
+    font-size: .8em;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+
+
+    .nav-links li {
+        display: inline-block;
+        list-style: none;
+        padding-right: 40px;
+    }
+   
+
+    .hero-img img {
+        opacity: .3;
+        object-position: 40% 75%;
+    }
+
+    .img-button{
+       top: 55%;
+        opacity: 1;
+    }
+
+
+    iframe {
+    width: 100%;
+    height: 300px;
+    }
+
+    
+
+    .pricing {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+
+    footer {
+    padding: 0 20px;   
+
+}
+    
+
+}
+
+@media (max-width: 480px) {
+
+
+header img {
+    height: auto;
+    width: 10vw;
+    padding-left: 0;
+    margin-right: 0;
+
+}
+
+nav button {
+    opacity: 0;
+}
+
+.nav-links li {
+    
+    padding-right: 5px;
+}
+
+li {
+    text-decoration: underline;
+    
+}
+
+.logo {
+    margin-left: 20%;
+    margin-bottom: 10px;
+    
+}
+
+#nav-bar {
+    margin-left: 15%;
+}
+
+
+header {
+    padding: 20px 0 0 10px;
+    top: 0;
+    display: block;
+    padding-right: 0;
+    margin: auto;
+}
+
+.feature-icons {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: 100%;
+}
+
+.feature-icons, p, .fas {
+    margin-bottom: 20px;
+}
+
+.footer-container {
+   background-color: #343434;
+   width: 100%;
+   padding: 0px; 
+}
+
+footer {
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 90%;
+}
+
+
+
+
+footer p {
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+}
