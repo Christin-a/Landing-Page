@@ -1,0 +1,61 @@
+/* Grids and  Flex */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+ 
+/* Margin and Padding */
+
+.p-20 {
+padding: 20px 20px; 
+}
+
+.py {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.px {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.my {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mx {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.m-bottom {
+    margin-bottom: 20px;
+}
+.m-top {
+    margin-top: 20px;
+}
+
+/* Buttons */
+
+button {
+    background-color: #343434;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    outline: none;
+    
+
+}

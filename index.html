@@ -7,6 +7,7 @@
     <title>Duke's Ukes</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Yeseva+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/29eae016da.js" crossorigin="anonymous"></script>
 
@@ -14,18 +15,19 @@
 
 <body>
     <div class="pagewrapper">
-        <div class="header-container">
-            <header id="header">
+        <!-- Header -->
+        <section class="header-container">
+            <header id="header" class="flex p-20">
     
-                <div class="logo">
-                    <a href="#"><img src="images/ukele-nav.png" alt="Duke's Uke's Logo" id="header-img"> <span
-                            class="logo-h1">Duke's Ukes Landing Page</span></a>
+                <div class="logo mx">
+                    <a href="#"><img src="images/ukele-nav.png" alt="Duke's Uke's Logo" id="header-img" > <span
+                            class="logo-h1">Duke's Ukes</span></a>
                     
                            
                 </div>
     
                 <nav id="nav-bar">
-                    <ul class="nav-links">
+                    <ul id="nav-links" class="nav-links flex">
                         <li><a href="#">How it Works</a></li>
                         <li><a href="#">Videos</a></li>
                         <li><a href="#">Packages</a></li>
@@ -34,36 +36,45 @@
                 </nav>
     
             </header>
-        </div>
-    
-        <div class="hero-box">
+        </section>
+
+    <!-- Herobox -->
+        <div class="hero-box p-20">
             <div class="hero-img">
-                <a href="#"><img src="images/Header-Ukulele.jpg" alt="person playing ukelele"></a>
+                <a href="#"><img src="images/Header-Ukulele.jpg" alt="person playing ukelele" class="hero-img"></a>
                 <div class="overlay"></div>
-                <div class="img-button">
+                <div class="main-button">
                     <button><a href="#">Shop</a></button>
                 </div>
             </div>
         </div>
     
-        <div class="feature">
-            <div class="feature-icons">
+        <!-- Features -->
+
+        <div id="features" class="feature grid-3">
+            <div class="featured">
                 <i class="fas fa-guitar"></i>
-                <i class="fas fa-box-open"></i>
-                <i class="fas fa-chalkboard-teacher"></i>
-    
                 <h2>Shop</h2>
-                <h2>Free Shipping</h2>
-                <h2>Classes Available</h2>
-    
                 <p>Browse through our catalogue of over 1000 ukeleles and choose which style, color and size you would like.
                 </p>
+            </div>
+
+            <div class="featured">
+                <i class="fas fa-box-open"></i>
+                <h2>Free Shipping</h2>
                 <p>We offer free shipping on order that are above $100 or/and on order with 2 or more ukeleles</p>
+            </div>
+
+            <div class="featured">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2>Classes Available</h2>
                 <p>Choose our Fret 2 or Fret 3 packages and receive access to one-one virtual ukelele sessions with a
                     professional player from our team </p>
             </div>
+
         </div>
-    
+
+    <!-- Video -->
     
         <div class="sample-vid">
             <h2>Lesson 1:</h2>
@@ -77,8 +88,10 @@
                 watch at your own convenience
             </h3>
         </div>
+
+        <!-- Pricing -->
     
-        <div class="pricing">
+        <div id="pricing" class="pricing grid-3 mx">
             <div id="fret1" class="packages">
                 <div class="fret">
                     <h2>Fret 1</h2>
@@ -87,7 +100,7 @@
                     <p>Receive insider tips about learningto play the ukelele delivered directly to your inbox every Monday.
                         These tips are gauranteed to accelerate your learning and help you master the ukelele. Try our our
                         one-month trial and see for yourself.</p>
-                    <button><a href="#">Select</a></button>
+                            <button><a href="#">Select</a></button>
                 </div>
             </div>
             <div id="fret2" class="packages">
@@ -114,20 +127,25 @@
             </div>
         </div>
     
-        <div class="footer-container">
-            <footer id="footer">
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <label id="email-label" for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="coolemail@emaildomain.com" />
-                    <input type="submit" id="submit" value="Submit" class="button">
-                </form>
+        <!-- Footer -->
+            <footer id="footer" class="flex" >
+                <div class="footer-form">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="coolemail@emaildomain.com" />
+                        <input type="submit" id="submit" value="Submit" class="button">
+                    </form>
+                </div>
     
-                <p>Get 20% off your first purchase when you sign up for our newsletter</p>
-                <p id="copyright">Copyright 2021, Duke's Ukes</p>
+                <div class="footer-text">
+                    <p>Get 20% off your first purchase when you sign up for our newsletter</p>
+                </div>
+                <div class="footer-copright">
+                    <p id="copyright">Copyright 2021, Duke's Ukes</p>
+                </div>
     
             </footer>
         </div>
-    </div>
 </body>
 
 </html>
